@@ -21,11 +21,13 @@ var price = 0;
   } else {
     console.log("Wake up earlier!")
   }
-}*/
+}
 
 var oldArray = ["old room", "ecks", "rocky", "snow", "plan", "reefer", "troll", "gigli", "shark", "xmas", "mac"];
 var newArray = ["emoji", "madea", "thanks", "snowman", "friend", "faith", "flatliners", "wolfcop", "grandmas", "ghost"];
+*/
 
+//Forget arrays. Make new movie constructor and put inside of tickets.
 function Tickets(movie, age, student, time, number) {
   this.movie = movie;
   this.age = age;
