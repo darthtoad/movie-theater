@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pataphysical Theatre of the Unknown</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <form id="theForm">
+        <div class="form-group">
+          <label for="movie">Select a Movie</label>
+          <select class="form-control" id="movie">
+            <option value="old room">The Room</option>
+            <option value="old ecks">Ecks vs Sever</option>
+            <option value="old rocky">Rocky Horror Picture Show</option>
+            <option value="old snow">Snow Dogs</option>
+            <option value="old plan">Plan 9 From Outer Space</option>
+            <option value="old reefer">Reefer Madness</option>
+            <option value="old troll">Troll 2</option>
+            <option value="old gigli">Gigli</option>
+            <option value="old shark">Sharknado</option>
+            <option value="old xmas">Christmas in Wonderland</option>
+            <option value="old mac">Mac and Me</option>
+            <option value="new emoji">Emoji Movie</option>
+            <option value="new madea">Boo 2! A Madea Halloween</option>
+            <option value="new thanks">Thank You For Your Service</option>
+            <option value="new snowman">The Snowman</option>
+            <option value="new friend">Friend Request</option>
+            <option value="new faith">A Question of Faith</option>
+            <option value="new flatliners">Flatliners</option>
+            <option value="new wolfcop">Another Wolfcop</option>
+            <option value="new grandmas">Bad Grandmas</option>
+            <option value="new ghost">Ghost Bride</option>
+          </select>
+          <div class="radio">
+            <p>Are you a senior citizen or a minor?</p>
+            <label>
+              <input type="radio" name="age" value="yes">
+              Yes
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="age" value="no">
+              No
+            </label>
+          </div>
+          <div class="radio">
+            <p>Are you a student?</p>
+            <label>
+              <input type="radio" name="student" value="yes">
+              Yes
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="student" value="no">
+              No
+            </label>
+          </div>
+          <div class="radio">
+            <p>Select showtime</p>
+            <label>
+              <input type="radio" name="time" value="matinee">
+              Matinee
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="time" value="night">
+              Night
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="number">How many tickets would you like?</label>
+            <input type="number" class="form-control number">
+          </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+      <div id="result">
+      </div>
+    </div>
+  </body>
+</html>
