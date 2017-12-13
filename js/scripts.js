@@ -28,6 +28,18 @@ var newArray = ["emoji", "madea", "thanks", "snowman", "friend", "faith", "flatl
 */
 
 //Forget arrays. Make new movie constructor and put inside of tickets.
+
+function Movie(times, ifClassic){
+  this.isMatinee = isMatinee;
+  this.times = times;
+  times = [];
+  this.ifClassic = ifClassic;
+  isMatinee = true; //maybe move this line and two following
+  if (time < 6) {
+    this.isMatinee = false;
+  }
+}
+
 function Tickets(movie, age, student, time, number) {
   this.movie = movie;
   this.age = age;
@@ -84,6 +96,7 @@ $(document).ready(function(){
     event.preventDefault();
     $("#result").empty();
     var movie = $("#movie").val();
+    var movieObj = new Movie();
 //    var name = $("#movie[name]").val();
     var age = $("input:radio[name=age]:checked").val();
     var student = $("input:radio[name=student]:checked").val();
